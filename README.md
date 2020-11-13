@@ -15,8 +15,8 @@ https://data.sandiego.gov/datasets/development-permits-set1/
 Closed approvals, since 2003 CSV (http://seshat.datasd.org/dsd/dsd_permits_all_pts.csv)
 **Note: this file was over 300MB and couldn't be uploaded to GitHub
 
-Data transformations: \n
-ds442.dbf -> ds442.csv (via excel - > species_tracking.csv (via Jupyter Notebook) -> Sql DB via engine connection. Data types updated, filtered for specified columns, columns concatenated and renamed. \n
+Data transformations:
+ds442.dbf -> ds442.csv (via excel - > species_tracking.csv (via Jupyter Notebook) -> Sql DB via engine connection. Data types updated, filtered for specified columns, columns concatenated and renamed.
 
 city_data.csv -> geographic.csv, development.csv, clean_city_data.csv (via Jupyter Notebook) -> Sql DB via engine connection. File filtered for completed projects, construction over $10,000, and specified columns.
 
