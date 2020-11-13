@@ -16,7 +16,7 @@ Closed approvals, since 2003 CSV (http://seshat.datasd.org/dsd/dsd_permits_all_p
 **Note: this file was over 300MB and couldn't be uploaded to GitHub
 
 Data transformations:
-ds442.dbf -> ds442.csv (via excel - > species_tracking.csv (via Jupyter Notebook) -> Sql DB via engine connection. Data types updated, columns concatenated and renamed.
+ds442.dbf -> ds442.csv (via excel - > species_tracking.csv (via Jupyter Notebook) -> Sql DB via engine connection. Data types updated, filtered for specified columns, columns concatenated and renamed.
 city_data.csv -> geographic.csv, development.csv, clean_city_data.csv (via Jupyter Notebook) -> Sql DB via engine connection. File filtered for completed projects, construction over $10,000, and specified columns.
 
 Database type and collections/tables:
