@@ -16,18 +16,24 @@ create table city (
 	date_project_complete DATE,
 	project_title VARCHAR,
 	project_scope VARCHAR,
-	address_job VARCHAR,
 	job_bc_code INT,
 	lat_job REAL,
 	lng_job REAL,
 	approval_type VARCHAR,
-	approval_valuation MONEY,
+	approval_valuation MONEY
 );
 create table geographic(
+	project_id INT,
+	address_job VARCHAR,
 	lat_job REAL,
 	lng_job REAL,
 	council_district INT,
-	zip INT,
+	zip INT
+);
+create table development(
+	project_id INT,
+	job_bc_code INT,
+	job_bc_code_description VARCHAR
 );
 select * from species_tracking
 ;
@@ -35,7 +41,7 @@ select * from city
 ;
 select * from geographic
 ;
-drop table **DEFINE**
+select * from development
 ;
 SELECT
     species_tracking.species_common_name AS Species,
